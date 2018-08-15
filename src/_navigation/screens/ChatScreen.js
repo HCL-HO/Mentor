@@ -7,27 +7,54 @@ export default class Example extends React.Component {
     };
 
     componentWillMount() {
+        const initMsg = this._getBotMsg('Hello Developer');
         this.setState({
-            messages: [
-                {
-                    _id: 1,
-                    text: 'Hello developer',
-                    createdAt: new Date(),
-                    user: {
-                        _id: 2,
-                        name: 'React Native'
-                        avatar: 'https://placeimg.com/140/140/any',
-                    },
-                },
-            ],
+            messages: [initMsg],
         });
     }
 
+    _getBotMsg(msg) {
+        const result = {
+            _id: 1,
+            text: msg,
+            createdAt: new Date(),
+            user: {
+                _id: 2,
+                name: 'React Native',
+                avatar: 'https://placeimg.com/140/140/any',
+            },
+        };
+        return result;
+    }
+
+    _autoReply(msg) {
+        const result = {
+            _id: 1,
+            text: msg,
+            createdAt: new Date(),
+            user: {
+                _id: 2,
+                name: 'React Native',
+                avatar: 'https://placeimg.com/140/140/any',
+            },
+        };
+
+        this.setState(previousState => ({
+            messages: GiftedChat.append(previousState.messages, result),
+        }));
+
+    }
+
     onSend(messages = []) {
+        console.log(messages);
         this.setState(previousState => ({
             messages: GiftedChat.append(previousState.messages, messages),
         }));
-        console.warn(this.state.messages);
+
+        setTimeout(()=>{
+            console.log(this.state.messages);
+            this._autoReply(messages);
+        }, 1000);
     }
 
     render() {
