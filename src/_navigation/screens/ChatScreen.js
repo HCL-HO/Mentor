@@ -1,7 +1,7 @@
 import { GiftedChat } from 'react-native-gifted-chat';
 import React from 'react';
 
-class Example extends React.Component {
+export default class Example extends React.Component {
     state = {
         messages: [],
     };
@@ -15,7 +15,7 @@ class Example extends React.Component {
                     createdAt: new Date(),
                     user: {
                         _id: 2,
-                        name: 'React Native',
+                        name: 'React Native'
                         avatar: 'https://placeimg.com/140/140/any',
                     },
                 },
@@ -27,6 +27,7 @@ class Example extends React.Component {
         this.setState(previousState => ({
             messages: GiftedChat.append(previousState.messages, messages),
         }));
+        console.warn(this.state.messages);
     }
 
     render() {

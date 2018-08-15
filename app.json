@@ -5,20 +5,20 @@
     "version": "1.0.0",
     "sdkVersion": "29.0.0",
     "ios": {
-      "bundleIdentifier": "com.eh.studio.heartlistener",
+      "bundleIdentifier": "com.eh.studio.mentor",
       "publishBundlePath": "ios/mentor/Supporting/shell-app.bundle",
       "publishManifestPath": "ios/mentor/Supporting/shell-app-manifest.json"
     },
     "android": {
-      "package": "com.eh.studio.heartlistener",
+      "package": "com.eh.studio.mentor",
       "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
       "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"
     },
-    "scheme": "expe84fefccdd924559ab0e1ee88c7dbd12",
     "isDetached": true,
     "detach": {
       "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.7.0-sdk29.0.0-de70611d-e42d-4d50-a6a5-2d8eabf6ed72.tar.gz",
       "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.6.0-sdk29.0.0-2366e226-0c19-4600-aa66-dce75dd474fb.tar.gz"
-    }
+    },
+    "scheme": "expb9f1cf318a294df28e4e354f1d98f01b"
   }
 }

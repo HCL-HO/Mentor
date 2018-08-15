@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.eh.studio.heartlistener</string>
+	<string>com.eh.studio.mentor</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -23,7 +23,7 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>expe84fefccdd924559ab0e1ee88c7dbd12</string>
+				<string>expb9f1cf318a294df28e4e354f1d98f01b</string>
 			</array>
 		</dict>
 		<dict>
@@ -31,7 +31,7 @@
 			<string>OAuthRedirect</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.eh.studio.heartlistener</string>
+				<string>com.eh.studio.mentor</string>
 			</array>
 		</dict>
 	</array>

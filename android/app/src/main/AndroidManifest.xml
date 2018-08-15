@@ -5,11 +5,11 @@
   xmlns:tools="http://schemas.android.com/tools">
 
   <permission
-    android:name="com.eh.studio.heartlistener.permission.C2D_MESSAGE"
+    android:name="com.eh.studio.mentor.permission.C2D_MESSAGE"
     android:protectionLevel="signature"/>
 
   <!-- These are required permissions to make the app run -->
-  <uses-permission android:name="com.eh.studio.heartlistener.permission.C2D_MESSAGE" />
+  <uses-permission android:name="com.eh.studio.mentor.permission.C2D_MESSAGE" />
   <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.INTERNET" />
@@ -75,7 +75,7 @@
       android:theme="@style/Theme.Exponent.Splash"
       android:windowSoftInputMode="adjustResize">
       <intent-filter>
-        <data android:scheme="expe84fefccdd924559ab0e1ee88c7dbd12"/>
+        <data android:scheme="expb9f1cf318a294df28e4e354f1d98f01b"/>
 
         <action android:name="android.intent.action.VIEW"/>
 
@@ -151,7 +151,7 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:scheme="com.eh.studio.heartlistener" android:path="oauthredirect"/>
+        <data android:scheme="com.eh.studio.mentor" android:path="oauthredirect"/>
       </intent-filter>
     </activity>
 
@@ -229,7 +229,7 @@
         <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
         <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
 
-        <category android:name="com.eh.studio.heartlistener"/>
+        <category android:name="com.eh.studio.mentor"/>
       </intent-filter>
     </receiver>
 

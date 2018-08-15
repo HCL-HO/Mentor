@@ -1,5 +1,8 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
+**/.DS_Store
+.idea/*
+
 # expo
 .expo/
 
@@ -18,3 +21,8 @@ yarn-error.log*
 
 # IDE
 .vscode/
+
+#android
+android/.gradle/*
+android/app/build/*
+android/.idea/*

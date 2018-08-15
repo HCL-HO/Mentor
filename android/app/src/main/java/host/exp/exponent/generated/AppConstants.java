@@ -14,12 +14,12 @@ public class AppConstants {
   public static final String VERSION_NAME = "2.7.1";
   public static String INITIAL_URL = "exp://exp.host/@clhoac/Mentor";
   public static final boolean IS_DETACHED = true;
-  public static final String SHELL_APP_SCHEME = "expe84fefccdd924559ab0e1ee88c7dbd12";
+  public static final String SHELL_APP_SCHEME = "expb9f1cf318a294df28e4e354f1d98f01b";
   public static final String RELEASE_CHANNEL = "default";
   public static boolean SHOW_LOADING_VIEW_IN_SHELL_APP = false;
   public static boolean ARE_REMOTE_UPDATES_ENABLED = true;
   public static final List<Constants.EmbeddedResponse> EMBEDDED_RESPONSES;
-  public static boolean FCM_ENABLED = false;
+  public static boolean FCM_ENABLED = true;
 
   static {
     List<Constants.EmbeddedResponse> embeddedResponses = new ArrayList<>();
