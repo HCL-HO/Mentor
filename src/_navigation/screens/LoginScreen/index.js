@@ -92,7 +92,9 @@ class Login extends Component {
                                 <Button
                                     style={styles.btn}
                                     onPress={() =>
-                                        this.props.navigation.navigate("Main")
+                                        this.props.navigation.navigate(
+                                            "MainStack"
+                                        )
                                     }
                                 >
                                     <Text>Login</Text>

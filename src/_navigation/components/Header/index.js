@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Header, Title, Button, Left, Body, Icon } from "native-base";
+import { Header, Title, Button, Left, Body, Icon, Right } from "native-base";
 import { Ionicons } from "@expo/vector-icons"; // Version can be specified in package.json
 import { View, StyleSheet } from "react-native";
 
@@ -18,12 +18,25 @@ export default class SharedHeader extends Component {
             // }}
             // style={style.headerContainer}
             >
-                <Ionicons
-                    style={{ margin: 5 }}
-                    name="ios-information-circle"
-                    size={50}
-                    color="green"
-                />
+                <Left>
+                    <Ionicons
+                        style={{ margin: 5 }}
+                        name="ios-information-circle"
+                        size={50}
+                        color="grey"
+                    />
+                </Left>
+                <Body>
+                    <Title>Title</Title>
+                </Body>
+                <Right>
+                    <Ionicons
+                        style={{ margin: 5 }}
+                        name="ios-information-circle"
+                        size={50}
+                        color="grey"
+                    />
+                </Right>
             </Header>
         );
     }
