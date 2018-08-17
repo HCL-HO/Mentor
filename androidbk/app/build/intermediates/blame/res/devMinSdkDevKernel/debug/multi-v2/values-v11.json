@@ -1,0 +1,39 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/eho/Desktop/EH/Mentor/android/app/build/intermediates/incremental/mergeDevMinSdkDevKernelDebugResources/merged.dir/values-v11/values-v11.xml",
+            "map": [
+                {
+                    "source": "/Users/eho/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-r2.5.4.aar/cc6a045711d98d3297fdc105828d0b2e/res/values-v11/values-v11.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "10",
+                        "endOffsets": "329"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "192",
+                        "endLines": "9",
+                        "endColumns": "10",
+                        "endOffsets": "466"
+                    }
+                },
+                {
+                    "source": "/Users/eho/.gradle/caches/transforms-1/files-1.1/CreditCardEntry-1.4.8.4.aar/93e29dbd4a8f0eab5162d338dccc0804/res/values-v11/values-v11.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "187"
+                    }
+                }
+            ]
+        }
+    ]
+}

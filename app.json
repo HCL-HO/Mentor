@@ -14,6 +14,10 @@
       "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
       "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"
     },
+    "androidStatusBar": {
+      "backgroundColor": "#000000",
+      "barStyle": "dark-content"
+    },
     "isDetached": true,
     "detach": {
       "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.7.0-sdk29.0.0-de70611d-e42d-4d50-a6a5-2d8eabf6ed72.tar.gz",

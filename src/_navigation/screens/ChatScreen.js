@@ -1,5 +1,5 @@
-import { GiftedChat } from 'react-native-gifted-chat';
-import React from 'react';
+import { GiftedChat } from "react-native-gifted-chat";
+import React from "react";
 
 export default class Example extends React.Component {
     state = {
@@ -8,9 +8,9 @@ export default class Example extends React.Component {
     };
 
     componentWillMount() {
-        const initMsg = this._getBotMsg('Hello Developer');
+        const initMsg = this._getBotMsg("Hello Developer");
         this.setState({
-            messages: [initMsg],
+            messages: [initMsg]
         });
     }
 
@@ -22,9 +22,9 @@ export default class Example extends React.Component {
             createdAt: new Date(),
             user: {
                 _id: 2,
-                name: 'React Native',
-                avatar: 'https://placeimg.com/140/140/any',
-            },
+                name: "React Native",
+                avatar: "https://placeimg.com/140/140/any"
+            }
         };
     }
 
@@ -38,14 +38,13 @@ export default class Example extends React.Component {
     _autoReply(msg) {
         const result = this._getBotMsg(msg);
         this.setState(previousState => ({
-            messages: GiftedChat.append(previousState.messages, result),
+            messages: GiftedChat.append(previousState.messages, result)
         }));
-
     }
 
     onSend(messages = []) {
         this.setState(previousState => ({
-            messages: GiftedChat.append(previousState.messages, messages),
+            messages: GiftedChat.append(previousState.messages, messages)
         }));
 
         setTimeout(() => {
@@ -60,7 +59,7 @@ export default class Example extends React.Component {
                 messages={this.state.messages}
                 onSend={messages => this.onSend(messages)}
                 user={{
-                    _id: 1,
+                    _id: 1
                 }}
             />
         );

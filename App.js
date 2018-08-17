@@ -4,13 +4,27 @@ import { Root } from "native-base";
 import { Provider } from "react-redux";
 import store from "_redux/store";
 import Navigator from "_navigation/navigator";
+import { Font, AppLoading } from "expo";
 
 export default class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { loading: true };
+    }
+
+    async componentWillMount() {
+        await Font.loadAsync({
+            Roboto: require("native-base/Fonts/Roboto.ttf"),
+            Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf")
+        });
+        this.setState({ loading: false });
+    }
+
     render() {
         return (
             <Provider store={store}>
                 <Root>
-                    <Navigator />
+                    {this.state.loading ? <AppLoading /> : <Navigator />}
                 </Root>
             </Provider>
         );
