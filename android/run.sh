@@ -1,3 +1,3 @@
 #!/bin/bash
 
-./gradlew ${1:-installDevMinSdkDevKernelDebug} --stacktrace && adb shell am start -n host.exp.exponent/host.exp.exponent.LauncherActivity
+./gradlew ${1:-installDevMinSdkDevKernelDebug} --stacktrace && adb shell am start -n com.eh.studio.mentor/host.exp.exponent.MainActivity

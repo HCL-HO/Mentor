@@ -1,41 +1,45 @@
 import React, { Component } from "react";
 import { Header, Title, Button, Left, Body, Icon, Right } from "native-base";
-import { Ionicons } from "@expo/vector-icons"; // Version can be specified in package.json
+import PropTypes from "prop-types";
 import { View, StyleSheet } from "react-native";
 
 export default class SharedHeader extends Component {
+    static propTypes = {
+        leftIcon: PropTypes.string,
+        leftIconAction: PropTypes.func
+    };
+
     shouldComponentUpdate() {
         return false;
     }
 
     render() {
         return (
-            <Header
-            // style={{
-            //     width: "100%",
-            //     height: "100%",
-            //     backgroundColor: "yellow"
-            // }}
-            // style={style.headerContainer}
-            >
+            <Header>
                 <Left>
-                    <Ionicons
-                        style={{ margin: 5 }}
-                        name="ios-information-circle"
-                        size={50}
-                        color="grey"
-                    />
+                    {this.props.leftIcon &&
+                        this.props.leftIconAction && (
+                            <Button
+                                transparent
+                                onPress={this.props.leftIconAction}
+                            >
+                                <Icon name={this.props.leftIcon} />
+                            </Button>
+                        )}
                 </Left>
                 <Body>
-                    <Title>Title</Title>
+                    <Title>Header</Title>
                 </Body>
                 <Right>
-                    <Ionicons
-                        style={{ margin: 5 }}
-                        name="ios-information-circle"
-                        size={50}
-                        color="grey"
-                    />
+                    <Button transparent>
+                        <Icon name="search" />
+                    </Button>
+                    <Button transparent>
+                        <Icon name="heart" />
+                    </Button>
+                    <Button transparent>
+                        <Icon name="more" />
+                    </Button>
                 </Right>
             </Header>
         );

@@ -10,14 +10,16 @@ export default class HomeScreen extends React.Component {
     }
 
     componentDidMount() {
-        console.log(this.props.navigation);
-        this.props.navigation.dispatch(DrawerActions.openDrawer());
+        this.props.navigation.openDrawer();
     }
 
     render() {
         return (
             <Container>
-                <Header />
+                <Header
+                    leftIcon="menu"
+                    leftIconAction={this.props.navigation.openDrawer}
+                />
                 <View
                     style={{
                         flex: 1,

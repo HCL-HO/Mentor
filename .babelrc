@@ -14,7 +14,8 @@
                     "_redux": "./src/_redux",
                     "_page": "./src/_page",
                     "_database": "./src/_database",
-                    "_environment": "./_environment"
+                    "_environment": "./_environment",
+                    "_image": "./image"
                 }
             }
         ]

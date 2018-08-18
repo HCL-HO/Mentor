@@ -4,6 +4,7 @@ import BottomTab from "./BottomNavigator";
 import { createDrawerNavigator } from "react-navigation";
 import HomeStack from "./HomeStack";
 import SettingsStack from "./SettingStack";
+import DrawerComponent from "../components/DrawerContent";
 
 const MainStack = createStackNavigator(
     {
@@ -22,7 +23,9 @@ const Drawer = createDrawerNavigator(
         Settings: SettingsStack
         // BottomTab: MainStack
     },
-    {}
+    {
+        contentComponent: DrawerComponent
+    }
 );
 
 export default Drawer;
