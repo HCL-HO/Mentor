@@ -3,14 +3,15 @@ import { createStackNavigator } from "react-navigation";
 import HomeScreen from "../screens/HomeScreen";
 import DetailsScreen from "../screens/DetailsScreen";
 import ChatScreen from "../screens/ChatTest/ChatScreen";
+import PageNames from "../PageConst";
 // import LoginScreen from "../screens/LoginScreen";
 
 const HomeStack = createStackNavigator(
     {
         // Login: LoginScreen,
-        Home: HomeScreen,
-        Details: DetailsScreen,
-        Chat: ChatScreen
+        [PageNames.HOME]: HomeScreen,
+        [PageNames.DETAILS]: DetailsScreen,
+        [PageNames.CHAT]: ChatScreen
     },
     {
         headerMode: "none"

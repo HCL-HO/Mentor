@@ -11,6 +11,7 @@ import {
     Text
 } from "native-base";
 import { Field, reduxForm } from "redux-form";
+import PageNames from "_navigation/PageConst";
 // import { setUser } from "../../actions/user";
 import styles from "./styles";
 
@@ -28,6 +29,12 @@ class Login extends Component {
             name: ""
         };
         this.renderInput = this.renderInput.bind(this);
+    }
+
+    componentDidMount() {
+        setTimeout(() => {
+            this.props.navigation.navigate(PageNames.MainStack);
+        }, 1000);
     }
 
     setUser(name) {
@@ -93,7 +100,7 @@ class Login extends Component {
                                     style={styles.btn}
                                     onPress={() =>
                                         this.props.navigation.navigate(
-                                            "MainStack"
+                                            PageNames.MainStack
                                         )
                                     }
                                 >

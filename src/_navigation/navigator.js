@@ -1,11 +1,12 @@
 import { createSwitchNavigator } from "react-navigation";
 import LoginScreen from "./screens/LoginScreen";
 import Drawer from "./stacks/Drawer";
+import PagesNames from "./PageConst";
 
 const Navigator = createSwitchNavigator(
     {
-        Login: LoginScreen,
-        MainStack: Drawer
+        [PagesNames.LOGIN]: LoginScreen,
+        [PagesNames.Drawer]: Drawer
     },
     {
         headerMode: "none"

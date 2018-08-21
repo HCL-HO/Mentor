@@ -3,12 +3,12 @@ import { Ionicons } from "@expo/vector-icons"; // Version can be specified in pa
 import { createBottomTabNavigator } from "react-navigation";
 import HomeStack from "./HomeStack";
 import SettingsStack from "./SettingStack";
-import Drawer from "./Drawer";
+import PageNames from "../PageConst";
 
 const BottomTab = createBottomTabNavigator(
     {
-        Home: HomeStack,
-        Settings: SettingsStack
+        [PageNames.HomeStack]: HomeStack,
+        [PageNames.SettingsStack]: SettingsStack
     },
     {
         navigationOptions: ({ navigation }) => ({

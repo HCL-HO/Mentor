@@ -2,9 +2,10 @@ import React from "react";
 import { createStackNavigator } from "react-navigation";
 import BottomTab from "./BottomNavigator";
 import { createDrawerNavigator } from "react-navigation";
-import HomeStack from "./HomeStack";
 import SettingsStack from "./SettingStack";
-import DrawerComponent from "../components/DrawerContent";
+import DrawerComponent from "../components/DrawerContent/DrawerContent";
+
+import PageNames from "../PageConst";
 
 const MainStack = createStackNavigator(
     {
@@ -19,8 +20,8 @@ const MainStack = createStackNavigator(
 
 const Drawer = createDrawerNavigator(
     {
-        Home: MainStack,
-        Settings: SettingsStack
+        [PageNames.MainStack]: MainStack,
+        [PageNames.SettingsStack]: SettingsStack
         // BottomTab: MainStack
     },
     {
